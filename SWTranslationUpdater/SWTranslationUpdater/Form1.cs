@@ -37,7 +37,7 @@ namespace SWTranslationUpdater
         private void inputTransBtn_Click(object sender, EventArgs e)
         {
             InputTranslationFileDialog = new OpenFileDialog();
-            InputTranslationFileDialog.Title = "Browse for input translation file";
+            InputTranslationFileDialog.Title = "Browse for input translation SoulWorkerHQTranslations text file";
             if (InputTranslationFileDialog.ShowDialog() == DialogResult.OK)
             {
                 var fileName = InputTranslationFileDialog.FileName;
@@ -50,7 +50,7 @@ namespace SWTranslationUpdater
         private void targetTransBtn_Click(object sender, EventArgs e)
         {
             TargetTranslationFileDialog = new OpenFileDialog();
-            TargetTranslationFileDialog.Title = "Browse for target translation file";
+            TargetTranslationFileDialog.Title = "Browse for target translation SoulWorkerHQTranslations text file";
 
             if (!string.IsNullOrEmpty(TargetTranslationFileDirectory))
                 TargetTranslationFileDialog.InitialDirectory = TargetTranslationFileDirectory;

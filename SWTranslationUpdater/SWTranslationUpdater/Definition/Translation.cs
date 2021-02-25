@@ -16,7 +16,7 @@ namespace SWTranslationUpdater.Definition
         public string Text { get; set; }
         public CountryCode CountryCode { get; set; }
 
-        public static string RegexPattern = @"ID=([0-9]+)([^\)]+)";
+        public static string RegexPattern = @"ID=([0-9]+)([^\)]+.)";
         #endregion
 
         #region Constructors
